@@ -6,11 +6,9 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import router from './lib/router';
-// import auth from './lib/auth';
 
 const app = express();
 app.use(cors({origin: true}));
-// auth(app);
 
 app.use(bodyParser.json({ limit: '1024mb' }));
 
