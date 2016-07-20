@@ -7,9 +7,6 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import routers from './lib/server/routers';
 import options from './options';
-import camsManager from './lib/cams-manager';
-
-camsManager();
 
 const app = express();
 app.use(cors({ origin: true }));
