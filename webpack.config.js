@@ -18,11 +18,11 @@ module.exports = {
 
   module: {
     loaders: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader: 'react-hot!babel',
-      },
+      // {
+      //   test: /\.(js|jsx)$/,
+      //   exclude: /node_modules/,
+      //   loader: 'react-hot!babel',
+      // },
       {
         test: /\.css$/,
         loader: 'style!css',
@@ -49,6 +49,20 @@ module.exports = {
         test: /\.(eot|woff|woff2|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader?name=/fonts/[name].[ext]'
       },
+      {
+        test: /\.js$|\.jsx$/,
+        loaders: ['react-hot', 'babel-loader'],
+        exclude: /[\\\/]node_modules[\\\/](?!react-redux-grid)/,
+      },
+      {
+        test: /\.styl$/,
+        exclude: /[\\\/]node_modules[\\\/](?!react-redux-grid)/,
+        loaders: ['style-loader', 'css-loader', 'stylus-loader']
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loaders: ['url-loader?limit=10000&mimetype=application/font-woff' ]
+      }
     ],
   },
 
