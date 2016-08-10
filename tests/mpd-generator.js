@@ -5,8 +5,8 @@ const debug = dg('cam-mpd-generator-test');
 
 const cameraId = 'sJNPJo2aDLjvu9Nr';
 const query = {
-  startTime: '2016-08-10T10:45:10',
-  endTime: '2016-08-10T10:45:48'
+  startTime: '2016-08-10T13:35:00.000Z',
+  endTime: '2016-08-10T13:35:30.000Z'
 };
 
 db.Sessions.find({cameraId}, 0, 0, (err, docs)=> {
