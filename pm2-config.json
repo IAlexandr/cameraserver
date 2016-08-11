@@ -1,0 +1,23 @@
+{
+  "apps" : [
+	{
+      "name": "cameraserver",
+      "script": "index-dev.js",
+      "watch": false,
+      "cwd": "home/sadm/nodeapps/cameraserver",
+      "autorestart": true,
+      "log_date_format": "DD-MM-YYYY HH:mm Z",
+      "ignore_watch": [
+        "[\\/\\\\]\\./",
+        "node_modules"
+      ],
+      "env": {
+        "DEBUG": "cam*",
+		"CS_PORT": "80"
+      },
+      "error_file": "./pm2-logs/err.log",
+      "out_file": "./pm2-logs/out.log",
+      "pid_file": "./pm2-logs/cameraserver.pid"
+    }
+  ]
+}
