@@ -2,7 +2,7 @@ const version = require('./package.json').version;
 const optionsSpec = {
   sourceDirPath: {
     required: true,
-    default: 'D:/ai/PROJECTS-TEMP/dash/',
+    default: 'data/',
     env: 'CS_SOURCE_DIR_PATH'
   },
   dbType: {
