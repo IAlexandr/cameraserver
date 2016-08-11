@@ -15,9 +15,9 @@
         "DEBUG": "cam*",
 		"CS_PORT": "80"
       },
-      "error_file": "./pm2-logs/err.log",
-      "out_file": "./pm2-logs/out.log",
-      "pid_file": "./pm2-logs/cameraserver.pid"
+      "error_file": "home/sadm/nodeapps/cameraserver/pm2-logs/err.log",
+      "out_file": "home/sadm/nodeapps/cameraserver/pm2-logs/out.log",
+      "pid_file": "home/sadm/nodeapps/cameraserver/pm2-logs/cameraserver.pid"
     }
   ]
 }
