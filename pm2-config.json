@@ -12,7 +12,7 @@
         "node_modules"
       ],
       "env": {
-        "DEBUG": "cam*, sw*",
+        "DEBUG": "",  // cam*, sw*
         "CS_PORT": "8080",
         "CS_SOURCE_DIR_PATH": "/home/sadm/nodeapps/cameraserver/data/"
       },
